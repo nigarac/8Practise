@@ -10,6 +10,6 @@
             this.Name = name;
             this.Price = price;
         }
-        //лдьапплвqweqweйцуавлоталпо
+        
     }
 }
