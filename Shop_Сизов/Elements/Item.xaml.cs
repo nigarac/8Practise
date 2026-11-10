@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using Shop_Сизов.Classes;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Shop_Сизов.Elements
 {
@@ -20,9 +8,12 @@ namespace Shop_Сизов.Elements
     /// </summary>
     public partial class Item : UserControl
     {
-        public Item()
+        public Item(object item)
         {
             InitializeComponent();
+            Shop ShopData = item as Shop;
+            lName.Content = ShopData.Name;
+            lPrice.Content = "Цена" + ShopData;
         }
     }
 }
