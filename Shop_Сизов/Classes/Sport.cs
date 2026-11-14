@@ -1,5 +1,6 @@
 ﻿namespace Shop_Сизов.Classes
 {
+    //dfgdf
     public class Sport : Shop
     {
         public string Size;
