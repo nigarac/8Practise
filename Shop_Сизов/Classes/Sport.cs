@@ -1,6 +1,4 @@
-﻿using System.Drawing;
-
-namespace Shop_Сизов.Classes
+﻿namespace Shop_Сизов.Classes
 {
     public class Sport : Shop
     {
