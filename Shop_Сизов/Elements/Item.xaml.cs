@@ -25,6 +25,17 @@ namespace Shop_Сизов.Elements
                 Sport SportData = item as Sport;
                 lCharacketeristic.Content = "Размер: " + SportData.Size;
             }
+            if (item is Electronics)
+            {
+                Electronics ElectronicsData = item as Electronics;
+                lCharacketeristic.Content = "Ёмкость аккумулятора = " + ElectronicsData.BatteryСapacity;
+                if (ElectronicsData.DrivingSpeed != 0)
+                {
+
+                    lSpeed.Content = "Скорость = " + ElectronicsData.DrivingSpeed + " км/ч";
+                    lSpeed.Visibility = Visibility;
+                }
+            }
         }
     }
 }

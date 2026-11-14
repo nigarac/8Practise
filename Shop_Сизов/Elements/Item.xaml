@@ -8,7 +8,7 @@
     <Grid>
         <Border
             Margin="20"
-            Width="200"
+            Width="250"
             CornerRadius="20"
             Background="#FF5A5A5A">
 
@@ -46,6 +46,14 @@
                     Grid.Row="1"
                     VerticalAlignment="Top"
                     Foreground="White"/>
+                <Label
+                    x:Name="lSpeed"
+                    Content="Скорость"
+                    Margin="10,96,10,0"
+                    Grid.Row="1"
+                    VerticalAlignment="Top"
+                    Foreground="White"
+                    Visibility="Hidden"/>
 
             </Grid>
             <Border.Effect>
