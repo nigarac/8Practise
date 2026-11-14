@@ -1,13 +1,5 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using Shop_Сизов.Classes;
 
 namespace Shop_Сизов
 {
@@ -16,9 +8,19 @@ namespace Shop_Сизов
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        List<object> AllItems = RepoItems.AllItems();
         public MainWindow()
         {
             InitializeComponent();
+            CreateUI();
+        }
+        public void CreateUI()
+        {
+            foreach (object item in AllItems)
+            {
+                parent.Children.Add(new Elements.Item(item));
+            }
         }
     }
 }

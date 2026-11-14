@@ -22,7 +22,7 @@
                     
                     Margin="20"
                     Width="160"
-                    Source="w"/>
+                    Source="/Images/ic_item.png"/>
                 <Label
                     x:Name="lName"
                     Content="Наименование"

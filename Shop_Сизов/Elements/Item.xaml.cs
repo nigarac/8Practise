@@ -13,7 +13,18 @@ namespace Shop_Сизов.Elements
             InitializeComponent();
             Shop ShopData = item as Shop;
             lName.Content = ShopData.Name;
-            lPrice.Content = "Цена" + ShopData;
+            lPrice.Content = "Цена" + ShopData.Price;
+
+            if (item is Classes.Children)
+            {
+                Children ChildrenData = item as Children;
+                lCharacketeristic.Content = "Возраст: " + ChildrenData.Age;
+            }
+            if (item is Sport)
+            {
+                Sport SportData = item as Sport;
+                lCharacketeristic.Content = "Размер: " + SportData.Size;
+            }
         }
     }
 }
